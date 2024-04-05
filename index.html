@@ -19,12 +19,36 @@
 </head>
 <body>
     <header class="header-container">
+        <!-- Logo de coseinpro a color -->
         <img src="./images/Logo Coseinpro.png" alt="Logo Coseinpro" class="header-logo">
-        <div id="header-button-menu" class="btn not-active">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
+        <!-- Barra de navegación -->
+        <nav class="nav-container">
+            <ul class="sidebar">
+                <div class="buttom-close-container">
+                    <button class="btn-close" onclick=hideSidebar()><img src="./images/close menuclose.svg" alt="close"></button>
+                </div>
+                
+                <div class="list-container">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </div>
+
+                <div class="sidebar-btn-contacto">
+                    <button>Contacto</button>
+                </div>
+
+                <div class="white-logo-container">
+                    <span class="sidebar-line"></span>
+                    <img src="./images/Logo Coseinpro blanco.png" alt="Logo Coseinpro">
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Menu -->
+        <button class="btn-menu" onclick=showSidebar()><img src="./images/Menunav.svg" alt="menu"></button>
     </header>
 
     <main>
@@ -34,7 +58,81 @@
                   <source src="./images/Animación sitio web Vertical.mp4" type="video/mp4">
                   Tu navegador no soporta la reproducción de videos HTML5.
                 </video>
+            </div>
         </section>
+
+        <div class="info-container">
+            <!-- <section class="publicaciones-container">
+                <h2>Publicaciones</h2>
+            </section> -->
+    
+            <section class="servicios-container">
+                <div class="servicios-title-container">
+                    <span class="line-title"></span>
+                    <h2>Nuestros<br>Servicios</h2>
+                </div>
+
+                <div class="cards-container">
+                    <div class="arriendos-container">
+                        <div class="franja">
+                            <div class="subtitle-container">
+                                <span class="line-subtitle"></span>
+                                <h3>Arriendos</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ventas-container">
+                        <div class="franja">
+                            <div class="subtitle-container">
+                                <span class="line-subtitle"></span>
+                                <h3>Ventas</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="avaluos-container">
+                        <div class="franja">
+                            <div class="subtitle-container">
+                                <span class="line-subtitle"></span>
+                                <h3>Avalúos</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hipotecas-container">
+                        <div class="franja">
+                            <div class="subtitle-container">
+                                <span class="line-subtitle"></span>
+                                <h3>Hipotecas</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asesorias-container">
+                        <div class="franja">
+                            <div class="subtitle-container">
+                                <span class="line-subtitle"></span>
+                                <h3>Asesorías</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="contacto-container">
+                <div class="contacto-title-container">
+                    <span class="line-title"></span>
+                    <h2>Redes<br>Sociales</h2>
+                </div>
+                <h2>Información de contacto</h2>
+            </section>
+        </div>
     </main>
+
+    <footer>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

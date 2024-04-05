@@ -29,6 +29,11 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: 'Hanson';
 }
 
 /* Header */
@@ -46,40 +51,259 @@ body {
     width: 13rem;
 }
 
-.btn {
-    width: 3.5rem;
-    cursor: pointer;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(180deg, rgba(20,20,20,1) 48%, rgba(35,35,35,1) 72%, rgba(37,37,37,1) 95%);
+  /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-#header-button-menu span {
-    display: block;
+.sidebar ul {
     width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .list-container {
+    width: 100%;
+}
+
+.sidebar li {
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(35,35,35,1) 72%, rgba(37,37,37,1) 95%);
+}
+
+/* .sidebar li:active {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 69%);
+} */
+
+.sidebar a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 0 3rem;
+    letter-spacing: .1rem;
+}
+
+.sidebar .list-container :nth-child(4) {
+    display: none;
+}
+
+.sidebar .sidebar-btn-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .sidebar-btn-contacto button {
+    border: none;
+    width: 19rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
-    height: .4rem;
-    background-image: linear-gradient(to left, var(--dark-red), #E10606);
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 80%);
+    font-family: 'Hanson';
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 9px 9px 10px -6px rgba(0,0,0,0.75);
 }
 
-span+span {
-    margin-top: .6rem;
-}
-
-/* Main */
-.inicio-container {
+.sidebar .white-logo-container {
     width: 100%;
-/*     background-image: linear-gradient(rgba(255, 255, 255, 0), var(--white) 100%, transparent), url('../images/img-ayuda-01.jpeg');
-    background-size: cover;
-    background-position: center; */
-    height: 70rem;
+    height: auto;
+    margin: 2rem 0 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.sidebar .white-logo-container .sidebar-line {
+    width: 20rem;
+    height: .1rem;
+    background-color: var(--white);
+}
+
+.sidebar .white-logo-container img {
+    width: 12rem;
+    margin-top: 3rem;
+}
+
+.btn-menu, .buttom-close-container .btn-close{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.buttom-close-container .btn-close {
+    margin: 2rem 3rem;
+}
+
+.buttom-close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+/* Main */
+
+/* seccion de inicio */
 
 .inicio-video-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 video {
     max-width: 100%;
     height: auto;
   }
+
+/* Fondo */
+.info-container {
+    background-image: url(../images/background\ main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Seccion de servicios */
+
+.servicios-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 18rem 0 0 0;
+}
+
+.servicios-container .servicios-title-container {
+    display: flex;
+}
+
+.line-title {
+    width: .6rem;
+    height: auto;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 90%);
+    margin-left: 3rem;
+    border-radius: 1rem;
+}
+
+.servicios-container .servicios-title-container h2 {
+    font-size: 2.2rem;
+    margin: .5rem 1rem 0 1rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.arriendos-container,
+.ventas-container,
+.avaluos-container,
+.hipotecas-container,
+.asesorias-container {
+    width: 28rem;
+    height: 33rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    border-radius: 1.6rem;
+    box-shadow: 4px 4px 8px 0px rgb(134, 134, 134);
+    display: flex;
+    align-items: center;
+}
+
+.arriendos-container {
+    background-image: url(../images/img-arriendos.png);
+}
+
+.ventas-container {
+    background-image: url(../images/img-ventas.png);
+}
+
+.avaluos-container {
+    background-image: url(../images/img-avaluos.png);
+}
+
+.hipotecas-container {
+    background-image: url(../images/img-hipoteca.png);
+}
+
+.asesorias-container {
+    background-image: url(../images/img-asesoria.png);
+}
+
+.franja {
+    background-color: var(--white);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.franja .subtitle-container {
+    display: flex;
+}
+
+.franja .line-subtitle {
+    width: .6rem;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 90%);
+    border-radius: 1rem;
+    margin-left: 2rem;
+}
+
+.franja h3 {
+    font-size: 1.8rem;
+    font-family: 'Hanson';
+    color: var(--grey);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: .6rem 2rem .6rem 1rem;
+}
+
+/* Secccion Redes Sociales */
+
+.contacto-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0 0 0;
+}
+
+.contacto-container .contacto-title-container {
+    display: flex;
+}
+
+.contacto-container .contacto-title-container h2 {
+    font-size: 2rem;
+    margin: .6rem 1rem 0 1rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

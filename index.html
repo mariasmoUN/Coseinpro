@@ -52,6 +52,7 @@
     </header>
 
     <main>
+        <!-- Banner -->
         <section class="inicio-container">
             <div class="inicio-video-container">
                 <video muted autoplay loop>
@@ -62,6 +63,7 @@
         </section>
 
         <div class="info-container">
+            <!-- Feed de instagram -->
             <section class="publicaciones-container">
                 <div class="publicaciones-title-container">
                     <span class="line-title"></span>
@@ -70,7 +72,8 @@
 
                 <div class="feedInsta-container"></div>
             </section>
-    
+
+            <!-- Cards de servicios -->
             <section class="servicios-container">
                 <div class="servicios-title-container">
                     <span class="line-title"></span>
@@ -125,7 +128,8 @@
                 </div>
             </section>
         </div>
-    
+        
+        <!-- Redes sociales y formulario -->
         <section class="contacto-container">
             <div class="contacto-title-container">
                 <span class="line-title"></span>
@@ -144,10 +148,20 @@
 
                 <img class="social-media" src="./images/social-media-coseinpro2.png" alt="Imagen perfil Instagram">
             </div>
-
-            <!-- <div class="info-contacto-container">
+            
+            <div class="info-contacto-container">
                 <h2>Información de contacto</h2>
-            </div> -->
+
+                <form id="form" class="form-contacto" name="contacto-coseinpro">
+                    <input id="email" type="email" name="email" placeholder="Correo electrónico" required>
+                    <input id="nombre" type="text" name="name" placeholder="Nombre de contacto" required>
+                    <input id="asunto" type="text" name="affair" placeholder="Servicio en el que estoy interesado" required>
+    
+                    <div class="form-button">
+                        <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar información</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 

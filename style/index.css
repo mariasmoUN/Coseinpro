@@ -45,6 +45,7 @@ h2 {
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 2; /* eliminar luego de poner el feed de insta */
 }
 
 .header-logo {
@@ -85,9 +86,9 @@ h2 {
     background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(35,35,35,1) 72%, rgba(37,37,37,1) 95%);
 }
 
-/* .sidebar li:active {
+.sidebar li:active {
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 69%);
-} */
+}
 
 .sidebar a {
     width: 100%;
@@ -176,6 +177,7 @@ h2 {
 video {
     max-width: 100%;
     height: auto;
+    pointer-events: none;
   }
 
 /* Fondo */
@@ -186,13 +188,41 @@ video {
     background-repeat: no-repeat;
 }
 
+/* Publicaciones feed instagram */
+
+.publicaciones-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 0 0;
+}
+
+.publicaciones-container .publicaciones-title-container {
+    display: flex;
+}
+
+.publicaciones-container .publicaciones-title-container h2 {
+    font-size: 2.2rem;
+    margin: .5rem 1rem 0 1rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.publicaciones-container .feedInsta-container {
+    height: 40rem;
+    background-color: lightgrey;
+    margin: 2rem 3rem 0 3rem;
+    opacity: .3;
+}
+
 /* Seccion de servicios */
 
 .servicios-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 18rem 0 0 0;
+    margin-top: 8rem;
 }
 
 .servicios-container .servicios-title-container {
@@ -293,7 +323,7 @@ video {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 8rem 0 0 0;
+    margin-top: 8rem;
 }
 
 .contacto-container .contacto-title-container {
@@ -306,4 +336,116 @@ video {
     color: var(--grey);
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.contacto-container .redes-container {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(190, 190, 190, 0.76) 100%);
+}
+
+.redes-container .coseinpro-container {
+    margin: 0 4rem;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 90%);
+    border-radius: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-container .coseinpro-container p {
+    color: var(--white);
+    font-family: 'Hanson';
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+}
+
+.contacto-container .links-redes-container {
+    background-color: var(--white);
+    border-radius: 0 3rem 3rem 0;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.contacto-container .links-redes-container a {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0 .5rem;
+}
+
+.contacto-container .links-redes-container img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.redes-container .social-media {
+    width: 100%;
+}
+
+/* Formulario de contacto */
+
+/* .contacto-container .info-contacto-container {
+    border: 1px solid blue;
+} */
+
+/* Footer */
+
+.footer-container {
+    background: linear-gradient(180deg, rgba(37,37,37,1),  rgba(35,35,35,1) 10%, rgba(20,20,20,1) 80%);
+    padding: 2rem 4em;
+}
+
+.footer-container .logo-co-container {
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.footer-container .logo-co-container img {
+    margin-bottom: 6rem;
+}
+
+.footer-info-container .footer-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-info-container .footer-text-container span {
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.footer-info-container p {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.footer-container .footer-redes-container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container .footer-redes-container a {
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 .5rem;
+}
+
+.footer-container .footer-p-container {
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.2rem;
 }

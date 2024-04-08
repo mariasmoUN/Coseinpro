@@ -20,7 +20,7 @@
 <body>
     <header class="header-container">
         <!-- Logo de coseinpro a color -->
-        <img src="./images/Logo Coseinpro.png" alt="Logo Coseinpro" class="header-logo">
+        <a href="#inicio"><img src="./images/Logo Coseinpro.png" alt="Logo Coseinpro" class="header-logo"></a>
 
         <!-- Barra de navegación -->
         <nav class="nav-container">
@@ -30,14 +30,14 @@
                 </div>
                 
                 <div class="list-container">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#inicio" onclick=hideSidebar()>Inicio</a></li>
+                    <li><a href="./quienesSomos.html" onclick=hideSidebar()>Quiénes somos</a></li>
+                    <li><a href="#servicios" onclick=hideSidebar()>Nuestros servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                 </div>
 
                 <div class="sidebar-btn-contacto">
-                    <button>Contacto</button>
+                    <button onclick=hideSidebar()>Contacto</button>
                 </div>
 
                 <div class="white-logo-container">
@@ -53,12 +53,16 @@
 
     <main>
         <!-- Banner -->
-        <section class="inicio-container">
+        <section class="inicio-container" id="inicio">
             <div class="inicio-video-container">
                 <video muted autoplay loop>
                   <source src="./images/Animación sitio web Vertical.mp4" type="video/mp4">
                   Tu navegador no soporta la reproducción de videos HTML5.
                 </video>
+            </div>
+
+            <div class="btn-inicio-container">
+                <button>Catálogo</button>
             </div>
         </section>
 
@@ -74,7 +78,7 @@
             </section>
 
             <!-- Cards de servicios -->
-            <section class="servicios-container">
+            <section class="servicios-container" id="servicios">
                 <div class="servicios-title-container">
                     <span class="line-title"></span>
                     <h2>Nuestros Servicios</h2>
@@ -130,7 +134,7 @@
         </div>
         
         <!-- Redes sociales y formulario -->
-        <section class="contacto-container">
+        <section class="contacto-container" id="contacto">
             <div class="contacto-title-container">
                 <span class="line-title"></span>
                 <h2>Redes Sociales</h2>
@@ -187,7 +191,7 @@
             </div>
 
             <div class="footer-text-container">
-                <span><img src="./images/hora-icon.png" alt="Horario"></span>
+                <span><img src="./images/hora-icon2.png" alt="Horario"></span>
                 <p>Lunes a Viernes 8:30 AM - 5:30 PM<br>Sábados 8:30 AM - 12:30 PM</p>
             </div>
         </div>
@@ -202,6 +206,14 @@
             <p>2024 <b>Coseinpro</b> todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Botón flotante WhatsApp -->
+
+    <div class="go-wpp-container">
+        <div class="go-wpp-button">
+            <img src="./images/logo-wp.png" alt="WhatsApp">
+        </div>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

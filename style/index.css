@@ -274,11 +274,11 @@ video {
     margin-top: 2rem;
 }
 
-.arriendos-container,
-.ventas-container,
-.avaluos-container,
-.hipotecas-container,
-.asesorias-container {
+.arriendos,
+.ventas,
+.avaluos,
+.hipotecas,
+.asesorias {
     width: 28rem;
     height: 33rem;
     background-size: cover;
@@ -289,25 +289,26 @@ video {
     box-shadow: 4px 4px 8px 0px rgb(134, 134, 134);
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.arriendos-container {
+.arriendos {
     background-image: url(../images/img-arriendos.png);
 }
 
-.ventas-container {
+.ventas {
     background-image: url(../images/img-ventas.png);
 }
 
-.avaluos-container {
+.avaluos {
     background-image: url(../images/img-avaluos.png);
 }
 
-.hipotecas-container {
+.hipotecas {
     background-image: url(../images/img-hipoteca.png);
 }
 
-.asesorias-container {
+.asesorias {
     background-image: url(../images/img-asesoria.png);
 }
 
@@ -336,6 +337,80 @@ video {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: .6rem 2rem .6rem 1rem;
+}
+
+.hoverArriendos,
+.hoverVentas,
+.hoverAvaluos,
+.hoverHipotecas,
+.hoverAsesorias {
+    display: none;
+    flex-direction: column;
+}
+
+.card-hover .subtitle-red-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%,rgb(194, 3, 3) 20%, rgba(123,0,0,1) 90%);
+    border-radius: 1.6rem 1.6rem 0 0;
+}
+
+.card-hover .hover-text-container {
+    border-bottom: 1px solid var(--white);
+    margin: 0 3rem;
+}
+
+.card-hover .info-hover-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(37,37,37,0.8),  rgba(35,35,35,0.8) 10%, rgba(20,20,20,0.8) 80%);
+    border-radius: 0 0 1.6rem 1.6rem;
+}
+
+.card-hover .hover-text-container p {
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.card-hover .subtitle-red-container h3 {
+    font-size: 1.8rem;
+    font-family: 'Hanson';
+    color: var(--white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-hover .hover-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.card-hover .hover-contact-container img {
+    width: 4rem;
+    margin-bottom: .5rem;
+}
+
+.card-hover .hover-contact-container button {
+    border: none;
+    width: auto;
+    padding: .8rem;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 80%);
+    font-family: 'Hanson';
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 9px 9px 10px -6px rgba(0,0,0,0.75);
 }
 
 /* Secccion Redes Sociales */

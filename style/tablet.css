@@ -1,0 +1,23 @@
+/* Header */
+
+.sidebar {
+    width: 60%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar li {
+    list-style: none;
+}
+
+/* Main */
+
+/* seccion de inicio */
+
+.inicio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-video-container {
+    max-width: 70%;
+}

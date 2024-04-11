@@ -611,12 +611,12 @@ video {
     font-size: 1.2rem;
 }
 
-/* Botón flotante WhatsApp */
+/* Botes flotantes */
 
 .go-wpp-container {
     position: fixed;
     bottom: 4rem;
-    left: 1rem;
+    left: 2rem;
     width: 6rem;
     height: 6rem;
     z-index: 3;
@@ -631,4 +631,36 @@ video {
 
 .go-wpp-container .go-wpp-button img {
     width: 6rem;
+}
+
+.go-top-container {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 3.1rem;
+    z-index: -1;
+}
+
+.go-top-container .go-top-button {
+    width: 0rem;
+    height: 0rem;
+    cursor: pointer;
+    z-index: 3;
+    
+}
+
+.go-top-container .go-top-button img {
+    width: 5.5rem;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    width: 5rem;
+    height: 5rem;
+    z-index: 11;
 }

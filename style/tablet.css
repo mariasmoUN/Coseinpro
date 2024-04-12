@@ -21,3 +21,26 @@
 .inicio-video-container {
     max-width: 70%;
 }
+
+/* Seccion de servicios */
+
+.cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arriendos,
+.ventas,
+.avaluos,
+.hipotecas,
+.asesorias {
+    margin: 1rem;
+}
+
+/* Botones flotantes */
+
+.go-top-container,
+.go-top-button {
+    display: none;
+}

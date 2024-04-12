@@ -564,10 +564,17 @@ video {
     width: 10rem;
 }
 
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-info-container .footer-text-container {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    width: 30rem;
 }
 
 .footer-info-container .footer-text-container span {

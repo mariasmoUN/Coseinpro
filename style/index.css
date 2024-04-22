@@ -48,6 +48,10 @@ h2 {
     z-index: 2; /* eliminar luego de poner el feed de insta */
 }
 
+.header-container .nav-btn-wapp {
+    display: none;
+}
+
 .header-logo {
     width: 13rem;
 }
@@ -162,6 +166,10 @@ h2 {
     display: flex;
     justify-content: flex-end;
 }
+
+.nav-content {
+    display: none;
+}
 /* Main */
 
 /* seccion de inicio */
@@ -171,6 +179,10 @@ h2 {
     justify-content: center;
     align-items: center;
     height: 90vh;
+}
+
+.video-desktop {
+    display: none;
 }
 
 video {
@@ -640,7 +652,7 @@ video {
     width: 6rem;
 }
 
-.go-top-container {
+/* .go-top-container {
     position: fixed;
     bottom: 4rem;
     right: 2rem;
@@ -648,9 +660,9 @@ video {
     height: 5.6rem;
     border-radius: 3.1rem;
     z-index: -1;
-}
+} */
 
-.go-top-container .go-top-button {
+/* .go-top-container .go-top-button {
     width: 0rem;
     height: 0rem;
     cursor: pointer;
@@ -670,4 +682,4 @@ video {
     width: 5rem;
     height: 5rem;
     z-index: 11;
-}
+} */

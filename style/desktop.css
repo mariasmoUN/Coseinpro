@@ -1,7 +1,7 @@
 /* Header */
 
 .header-container {
-    padding: 1.5rem 0rem 1.5rem 3rem;
+    padding: 1rem 0rem 1rem 3rem;
 }
 
 .header-logo {
@@ -17,7 +17,7 @@
 }
 
 .nav-content li {
-    padding: 0 1rem;
+    padding: 0 2rem;
     list-style: none;
     border-left: 1px solid var(--grey);
 }
@@ -45,7 +45,7 @@
 
 .nav-btn-wapp img {
     width: 5rem;
-    margin: .5rem 3rem .5rem 2rem;
+    margin: .5rem 6rem .5rem 2rem;
     cursor: pointer;
 }
 
@@ -59,12 +59,70 @@
 
 .video-desktop {
     display: flex;
-    width: 100%;
-    max-width: 1360px;
-    height: auto;
-    margin-top: 9rem;
+    max-width: 1468px;
+    height: 90vh;
+    margin-top: 8rem;
 }
 
 video {
     display: flex;
+}
+
+/* Fondo */
+.info-container {
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url(../images/background-main-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Publicaciones feed instagram */
+.publicaciones-container {
+    margin-top: 10rem;
+}
+
+.publicaciones-container .publicaciones-title-container {
+    justify-content: center;
+}
+
+.publicaciones-container .feedInsta-container {
+    margin: 4rem 6rem 0 6rem;
+}
+
+/* Seccion de servicios */
+
+.servicios-container {
+    align-items: center;
+}
+
+.servicios-container .servicios-title-container {
+    justify-content: center;
+    align-self: center;
+}
+
+.cards-container {
+    margin: 3.5rem 0 6rem 0;
+    max-width: 1230px;
+}
+
+.arriendos,
+.ventas,
+.avaluos,
+.hipotecas,
+.asesorias {
+    width: 30rem;
+    height: 35rem;
+    margin: 1.5rem;
+}
+
+/* Secccion Redes Sociales */
+
+.contacto-container .contacto-title-container {
+    justify-content: center;
+}
+
+/* Botes flotantes */
+
+.go-wpp-container {
+    display: none;
 }

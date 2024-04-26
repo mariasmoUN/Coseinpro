@@ -59,13 +59,15 @@
 
 .video-desktop {
     display: flex;
-    max-width: 1468px;
-    height: 90vh;
-    margin-top: 8rem;
+    justify-content: center;
+    max-width: 100vw;
+    height: 100vh;
 }
 
 video {
+    max-width: 1920px;
     display: flex;
+    margin-top: 8rem;
 }
 
 /* Fondo */
@@ -121,8 +123,49 @@ video {
     justify-content: center;
 }
 
+.contacto-container .redes-container {
+    align-items: center;
+}
+
+.redes-container .coseinpro-container {
+    align-self: center;
+    width: 45rem;
+}
+
+.redes-container .coseinpro-container p {
+    margin-right: 2.5rem;
+}
+
+.contacto-container .links-redes-container {
+    border-radius: 0 3.5rem 3.5rem 0;
+}
+
+.contacto-container .links-redes-container a {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.contacto-container .links-redes-container img {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+/* Formulario de contacto */
+
+.contacto-container .info-contacto-container {
+    padding: 20rem  4rem;
+}
+
 /* Botes flotantes */
 
 .go-wpp-container {
+    display: none;
+}
+
+.go-wpp-container .go-wpp-button {
+    display: none;
+}
+
+.go-wpp-container .go-wpp-button img {
     display: none;
 }

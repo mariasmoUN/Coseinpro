@@ -468,7 +468,7 @@ video {
 }
 
 .redes-container .coseinpro-container {
-    margin: 0 2rem;
+    margin: 0 4rem;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 90%);
     border-radius: 4rem;
     display: flex;
@@ -504,7 +504,7 @@ video {
 }
 
 .redes-container .social-media {
-    width: 100%;
+    max-width: 70rem;
 }
 
 /* Formulario de contacto */
@@ -563,7 +563,10 @@ video {
 
 .footer-container {
     background: linear-gradient(180deg, rgba(37,37,37,1),  rgba(35,35,35,1) 10%, rgba(20,20,20,1) 80%);
-    padding: 2rem 4em;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
 }
 
 .footer-container .logo-co-container {
@@ -571,6 +574,7 @@ video {
     display: flex;
     justify-content: center;
     margin: 6rem;
+    width: 35rem;
 }
 
 .footer-container .logo-co-container img {

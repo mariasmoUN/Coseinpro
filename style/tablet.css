@@ -13,13 +13,31 @@
 
 /* seccion de inicio */
 
-.inicio-container {
-    display: flex;
-    justify-content: center;
+.inicio-video-container {
+    display: none;
 }
 
-.inicio-video-container {
-    max-width: 70%;
+.video-desktop {
+    display: flex;
+    max-width: 1468px;
+}
+
+video {
+    display: flex;
+    margin-top: 7rem;
+}
+
+/* fondo */
+.info-container {
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url(../images/background-main-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Publicaciones */
+.publicaciones-container {
+    margin-top: 8rem;
 }
 
 /* Seccion de servicios */
@@ -36,6 +54,36 @@
 .hipotecas,
 .asesorias {
     margin: 1rem;
+}
+
+/* Secccion Redes Sociales */
+
+.redes-container {
+    align-items: center;
+}
+
+.redes-container .coseinpro-container {
+    align-self: flex-start;
+    width: 41rem;
+}
+
+.redes-container .coseinpro-container p {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+/* Formulario de contacto */
+
+.contacto-container .info-contacto-container {
+    padding: 12rem  4rem;
+    background-image: url(../images/bg-formulario-tablet.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contacto-container .info-contacto-container #form {
+    width: 530px;
 }
 
 /* Botones flotantes */

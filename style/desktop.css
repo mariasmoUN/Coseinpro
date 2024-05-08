@@ -117,6 +117,10 @@ video {
     margin: 1.5rem;
 }
 
+.card-hover .hover-contact-container {
+    margin-top: 3rem;
+}
+
 /* Secccion Redes Sociales */
 
 .contacto-container .contacto-title-container {
@@ -155,6 +159,8 @@ video {
 .contacto-container .info-contacto-container {
     padding: 20rem  4rem;
 }
+
+/* Footer */
 
 /* Botes flotantes */
 

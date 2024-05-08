@@ -1,0 +1,59 @@
+/* Banner */
+
+.quienesSomos-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.video-desktop {
+    display: none;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    margin-top: 7rem;
+}
+
+/* Informacion */
+
+.info {
+    border: 1px solid goldenrod;
+}
+
+.info-title-container {
+    margin: 10rem 3rem 0 0;
+    display: flex;
+}
+
+.info-title-container h2 {
+    font-size: 2rem;
+    margin: .5rem 1rem 0 1rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-text-container {
+    margin: 3rem;
+}
+
+.info-text-container h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: var(--grey);
+}
+
+.info-text-container p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.info-btn-container {
+    border: 1px solid gold;
+    display: flex;
+    justify-content: center;
+}

@@ -118,7 +118,7 @@ h2 {
 .sidebar .sidebar-btn-contacto button {
     border: none;
     width: 19rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     border-radius: 1rem;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 80%);
     font-family: 'Hanson';
@@ -127,7 +127,13 @@ h2 {
     color: var(--white);
     text-transform: uppercase;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     box-shadow: 9px 9px 10px -6px rgba(0,0,0,0.75);
+}
+
+.sidebar-btn-contacto a {
+    width: auto;
 }
 
 .sidebar .white-logo-container {
@@ -377,14 +383,14 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5.5rem;
+    height: 5rem;
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%,rgb(194, 3, 3) 20%, rgba(123,0,0,1) 90%);
     border-radius: 1.6rem 1.6rem 0 0;
 }
 
 .card-hover .hover-text-container {
     border-bottom: 1px solid var(--white);
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .card-hover .info-hover-container{
@@ -397,9 +403,9 @@ video {
 }
 
 .card-hover .hover-text-container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--white);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .card-hover .subtitle-red-container h3 {
@@ -414,7 +420,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .card-hover .hover-contact-container img {

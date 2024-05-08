@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/quienes_somos.css">
+    <link rel="stylesheet" href="./style/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 1024px)">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/icono_coseinpro2.ico">
+
+    <title>Quienes somos</title>
+</head>
+<body>
+    <header class="header-container">
+        <!-- Logo de coseinpro a color -->
+        <a href="index.html"><img src="./images/Logo Coseinpro.png" alt="Logo Coseinpro" class="header-logo"></a>
+
+        <!-- Barra de navegación movile-->
+        <nav class="nav-container">
+            <ul class="sidebar">
+                <div class="buttom-close-container">
+                    <button class="btn-close" onclick=hideSidebar()><img src="./images/close menuclose.svg" alt="close"></button>
+                </div>
+                
+                <div class="list-container">
+                    <li><a href="./index.html" onclick=hideSidebar()>Inicio</a></li>
+                    <li><a href="./quienes_somos.html" onclick=hideSidebar()>Quiénes somos</a></li>
+                    <li><a href="./index.html#servicios" onclick=hideSidebar()>Nuestros servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </div>
+
+                <div class="sidebar-btn-contacto">
+                    <button onclick=hideSidebar()><a href="https://wa.me/573128789387" target="_blank">Contacto</a></button>
+                </div>
+
+                <div class="white-logo-container">
+                    <span class="sidebar-line"></span>
+                    <img src="./images/Logo Coseinpro blanco.png" alt="Logo Coseinpro">
+                </div>
+            </ul>
+
+            <!-- Barra de navegación desktop -->
+            <div class="nav-content">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./quienes_somos.html">Quiénes somos</a></li>
+                <li><a href="./index.html#servicios">Nuestros servicios</a></li>
+                <li><a href="./index.html#contacto">Contacto</a></li>
+            </div>
+        </nav>
+
+        <div class="nav-btn-wapp">
+            <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
+        </div>
+
+        <!-- Menu -->
+        <button class="btn-menu" onclick=showSidebar()><img src="./images/Menunav.svg" alt="menu"></button>
+    </header>
+
+    <main onclick=hideSidebar()>
+        <section class="banner-queinesSomos" id="inicio">
+            <div class="quienesSomos-video-container">
+                <video muted autoplay loop>
+                  <source src="./images/Quiénes Somos.mp4" type="video/mp4">
+                  Tu navegador no soporta la reproducción de videos HTML5.
+                </video>
+            </div>
+
+            <div class="video-desktop">
+                <video class="video" muted autoplay loop>
+                  <source src="./images/Quiénes Somos.mp4" type="video/mp4">
+                  Tu navegador no soporta la reproducción de videos HTML5.
+                </video>
+            </div>
+        </section>
+        
+        <section class="info">
+            <div class="info-title-container">
+                <span class="line-title"></span>
+                <h2>Bienvenido a Coseinpro</h2>
+            </div>
+
+            <div class="info-text-container">
+                <p>En Coseinpro, transformamos la búsqueda de la propiedad perfecta en una experiencia excepcional. Con una trayectoria de más de 15 años en el mercado, somos líderes en la compra, venta y alquiler de inmuebles residenciales y comerciales.</p>
+
+                <h3>Servicio Personalizado y Tecnología de Vanguardia</h3>
+
+                <p>Nuestro enfoque personalizado se combina con herramientas tecnológicas avanzadas, permitiéndole explorar opciones y tomar decisiones desde cualquier lugar y en cualquier momento. Desde modernos espacios comerciales hasta elegantes residencias, nuestra cartera está diseñada para satisfacer todas las necesidades y presupuestos.</p>
+
+                <h3>Compromiso con la Excelencia</h3>
+
+                <p>Su satisfacción es nuestra prioridad. Nos dedicamos a ofrecerle un servicio que no solo cumpla, sino que exceda sus expectativas. Somos un equipo humano capacitado para acompañar a nuestros clientes   en cualquier proceso inmobiliario, nos encargamos de llevar a cabo todo el procedimiento comercial y jurídico, buscando que la gestión inmobiliaria sea completamente segura.</p>
+
+                <h3>Descubra su Próxima Inversión con Nosotros</h3>
+
+                <p>Visítenos en nuestras redes sociales para explorar nuestras propiedades destacadas o contáctenos directamente para una atención personalizada. En Coseinpro, su futuro inmobiliario empieza aquí.</p>
+                <!-- <p>Descubre tu próximo hogar o espacio comercial con nosotros. Desde acogedores apartamentos hasta locales comerciales en zonas estratégicas, tenemos la opción perfecta para tus necesidades residenciales o empresariales. Con nuestro equipo experto, encontrarás el lugar que se adapta a tu estilo de vida o a tu negocio.<br><br>
+                Somos un equipo humano capacitado para acompañar a nuestros clientes en cualquier proceso inmobiliario. Nos encargamos de llevar a cabo todo el procedimiento comercial y jurídico, buscando que la gestión inmobiliaria sea completamente segura.<br><br>
+                Contáctanos hoy y déjanos hacer realidad tus sueños de bienes raíces.</p> -->
+            </div>
+
+            <div class="info-btn-container">
+                <button><a href="">Contáctanos</a><img src="./images/wp-icon.png" alt=""></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="logo-co-container">
+            <img src="./images/logo-co.png" alt="Logo Coseinpro - Co">
+        </div>
+
+        <div class="footer-info-container">
+            <div class="footer-text-container">
+                <span><img src="./images/place-icon.png" alt="Ubicación"></span>
+                <p>Cra 76 #42-32 Laureles, Medellín</p>
+            </div>
+        
+            <div class="footer-text-container">
+                <span><img src="./images/phone-icon.png" alt="Teléfono"></span>
+                <p>(604) 444 62 67</p>
+            </div>
+
+            <div class="footer-text-container">
+                <span><img src="./images/mail-icon.png" alt="Correo"></span>
+                <p>publicidad@coseinpro.com</p>
+            </div>
+
+            <div class="footer-text-container">
+                <span><img src="./images/hora-icon2.png" alt="Horario"></span>
+                <p>Lunes a Viernes 8:30 AM - 5:30 PM<br>Sábados 8:30 AM - 12:30 PM</p>
+            </div>
+        </div>
+
+        <div class="footer-redes-container">
+            <a href="https://www.instagram.com/coseinpro/" target="_blank"><img src="./images/ig-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="./images/wp-icon.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/Coseinpro" target="_blank"><img src="./images/fb-icon.png" alt="Facebook"></a>
+        </div>
+
+        <div class="footer-p-container">
+            <p>2024 <b>Coseinpro</b> todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

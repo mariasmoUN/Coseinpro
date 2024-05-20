@@ -20,24 +20,30 @@
 <body>
     <header class="header-container">
         <!-- Logo de coseinpro a color -->
-        <a href="#inicio"><img src="./images/Logo Coseinpro.png" alt="Logo Coseinpro" class="header-logo"></a>
+        <a href="#inicio">
+            <img src="./images/Logo Coseinpro.png" alt="Logo Coseinpro" class="header-logo">
+        </a>
 
         <!-- Barra de navegación movile-->
         <nav class="nav-container">
             <ul class="sidebar">
                 <div class="buttom-close-container">
-                    <button class="btn-close" onclick=hideSidebar()><img src="./images/close menuclose.svg" alt="close"></button>
+                    <button class="btn-close" onclick=hideSidebar()>
+                        <img src="./images/close menuclose.svg" alt="close">
+                    </button>
                 </div>
                 
                 <div class="list-container">
                     <li><a href="#inicio" onclick=hideSidebar()>Inicio</a></li>
                     <li><a href="./quienes_somos.html" onclick=hideSidebar()>Quiénes somos</a></li>
                     <li><a href="#servicios" onclick=hideSidebar()>Nuestros servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
                 </div>
 
                 <div class="sidebar-btn-contacto">
-                    <button onclick=hideSidebar()><a href="https://wa.me/573128789387" target="_blank">Contacto</a></button>
+                    <button onclick=hideSidebar()>
+                        <a href="https://wa.me/573128789387" target="_blank">Contacto</a>
+                        <img src="./images/wp-icon.png" alt="WhatsApp">
+                    </button>
                 </div>
 
                 <div class="white-logo-container">
@@ -56,11 +62,15 @@
         </nav>
 
         <div class="nav-btn-wapp">
-            <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
+            <a href="https://wa.me/573128789387" target="_blank">
+                <img src="./images/logo-wp.png" alt="WhatsApp">
+            </a>
         </div>
 
         <!-- Menu -->
-        <button class="btn-menu" onclick=showSidebar()><img src="./images/Menunav.svg" alt="menu"></button>
+        <button class="btn-menu" onclick=showSidebar()>
+            <img src="./images/Menunav.svg" alt="menu">
+        </button>
     </header>
 
     <main onclick=hideSidebar()>
@@ -89,16 +99,26 @@
                     <h2>Publicaciones</h2>
                 </div>
 
-                <div class="feedInsta-container" id="feed-contenedor">
+                <div id="feed-contenedor">
                     <div class="main-galery">
-                        <div class="left">
+                        <button id="prev">
                             <img src="./images/flecha-izq.png" alt="Flecha izquierda">
+                        </button>
+
+                        <div id="carousel" class="carousel">
+                            <div id="photos" class="photos"></div>
                         </div>
+
+                        <button id="next">
+                            <img src="./images/flecha-der.png" alt="Flecha derecha">
+                        </button>
                     </div>
                 </div>
 
                 <div class="btn-catalogo-container">
-                    <a href="https://www.instagram.com/coseinpro/" target="_blank"><button>Catálogo <img src="./images/ig-icon.png" alt="Instagram"></button></a>
+                    <a href="https://www.instagram.com/coseinpro/" target="_blank">
+                        <button>Catálogo <img src="./images/ig-icon.png" alt="Instagram"></button>
+                    </a>
                 </div>
             </section>
 
@@ -130,8 +150,13 @@
                             </div>
     
                             <div class="hover-contact-container">
-                                <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
-                                <a href="https://wa.me/573128789387" target="_blank"><button>Escríbenos</button></a>
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <img src="./images/logo-wp.png" alt="WhatsApp">
+                                </a>
+
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <button>Escríbenos</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -156,8 +181,13 @@
                             </div>
     
                             <div class="hover-contact-container">
-                                <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
-                                <a href="https://wa.me/573128789387" target="_blank"><button>Escríbenos</button></a>
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <img src="./images/logo-wp.png" alt="WhatsApp">
+                                </a>
+
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <button>Escríbenos</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -182,8 +212,13 @@
                             </div>
     
                             <div class="hover-contact-container">
-                                <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
-                                <a href="https://wa.me/573128789387" target="_blank"><button>Escríbenos</button></a>
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <img src="./images/logo-wp.png" alt="WhatsApp">
+                                </a>
+
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <button>Escríbenos</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -208,8 +243,13 @@
                             </div>
     
                             <div class="hover-contact-container">
-                                <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
-                                <a href="https://wa.me/573128789387" target="_blank"><button>Escríbenos</button></a>
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <img src="./images/logo-wp.png" alt="WhatsApp">
+                                </a>
+
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <button>Escríbenos</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -234,8 +274,13 @@
                             </div>
     
                             <div class="hover-contact-container">
-                                <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
-                                <a href="https://wa.me/573128789387" target="_blank"><button>Escríbenos</button></a
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <img src="./images/logo-wp.png" alt="WhatsApp">
+                                </a>
+
+                                <a href="https://wa.me/573128789387" target="_blank">
+                                    <button>Escríbenos</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -253,9 +298,17 @@
             <div class="redes-container">
                 <div class="coseinpro-container">
                     <div class="links-redes-container">
-                        <a href="https://www.instagram.com/coseinpro/" target="_blank"><img src="./images/logo-ig.png" alt="Instagram"></a>
-                        <a href="https://ms.fincaraiz.com.co/inmobiliaria/coseinpro/fe5b0bc2-fd8f-46d1-a4e4-12c26e8a55ae" target="_blank"><img src="./images/logo-fr.png" alt="Fincaraiz"></a>
-                        <a href="https://www.facebook.com/marketplace/profile/100000275737629/" target="_blank"><img src="./images/logo-fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/coseinpro/" target="_blank">
+                            <img src="./images/logo-ig.png" alt="Instagram">
+                        </a>
+
+                        <a href="https://ms.fincaraiz.com.co/inmobiliaria/coseinpro/fe5b0bc2-fd8f-46d1-a4e4-12c26e8a55ae" target="_blank">
+                            <img src="./images/logo-fr.png" alt="Fincaraiz">
+                        </a>
+
+                        <a href="https://www.facebook.com/marketplace/profile/100000275737629/" target="_blank">
+                            <img src="./images/logo-fb.png" alt="Facebook">
+                        </a>
                     </div>
                     <p>@coseinpro</p>
                 </div>
@@ -307,9 +360,17 @@
         </div>
 
         <div class="footer-redes-container">
-            <a href="https://www.instagram.com/coseinpro/" target="_blank"><img src="./images/ig-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="./images/wp-icon.png" alt="WhatsApp"></a>
-            <a href="https://www.facebook.com/Coseinpro" target="_blank"><img src="./images/fb-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/coseinpro/" target="_blank">
+                <img src="./images/ig-icon.png" alt="Instagram">
+            </a>
+
+            <a href="https://wa.me/573128789387" target="_blank"">
+                <img src="./images/wp-icon.png" alt="WhatsApp">
+            </a>
+
+            <a href="https://www.facebook.com/Coseinpro" target="_blank">
+                <img src="./images/fb-icon.png" alt="Facebook">
+            </a>
         </div>
 
         <div class="footer-p-container">
@@ -321,15 +382,15 @@
 
     <div class="go-wpp-container">
         <div class="go-wpp-button">
-            <a href="https://wa.me/573128789387" target="_blank"><img src="./images/logo-wp.png" alt="WhatsApp"></a>
+            <a href="https://wa.me/573128789387" target="_blank">
+                <img src="./images/logo-wp.png" alt="WhatsApp">
+            </a>
         </div>
     </div>
 
-   <!--  <div class="go-top-container">
-        <div class="go-top-button">
-            <img src="./images/up-button.png" alt="Up">
-        </div>
-    </div> -->
+    <button id="scrollToTopButton" style="display: none;" onclick="scrollToTop()">
+        <img src="./images/up-button.png" alt="Up">
+    </button>
 
     <script src="./js/script.js"></script>
 </body>

@@ -117,8 +117,8 @@ h2 {
 
 .sidebar .sidebar-btn-contacto button {
     border: none;
-    width: 19rem;
-    padding: 1rem 0rem;
+    width: auto;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 80%);
     font-family: 'Hanson';
@@ -128,12 +128,19 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    gap: 1rem;
+    justify-content: space-evenly;
     box-shadow: 9px 9px 10px -6px rgba(0,0,0,0.75);
 }
 
 .sidebar-btn-contacto a {
     width: auto;
+    margin: 0;
+}
+
+.sidebar-btn-contacto img {
+    width: 2rem;
+    height: 2rem;
 }
 
 .sidebar .white-logo-container {
@@ -226,11 +233,37 @@ video {
     letter-spacing: 1px;
 }
 
-.publicaciones-container .feedInsta-container {
-    height: 40rem;
-    background-color: lightgrey;
-    margin: 2rem 3rem 0 3rem;
-    opacity: .3;
+#feed-contenedor {
+    margin: 4rem 3rem 2rem 3rem;
+}
+
+.main-galery {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-galery button {
+    border: none;
+    background: none;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.photos {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.photos div {
+    min-width: 100%; 
+}
+
+button {
+    cursor: pointer;
 }
 
 .btn-catalogo-container {
@@ -260,7 +293,7 @@ video {
 }
 
 .btn-catalogo-container img {
-    width: 2.5rem;
+    width: 2rem;
     margin-left: 1rem;
     margin-bottom: .5rem;
 }
@@ -664,34 +697,16 @@ video {
     width: 6rem;
 }
 
-/* .go-top-container {
+#scrollToTopButton {
     position: fixed;
     bottom: 4rem;
     right: 2rem;
-    width: 5.6rem;
-    height: 5.6rem;
-    border-radius: 3.1rem;
-    z-index: -1;
-} */
-
-/* .go-top-container .go-top-button {
-    width: 0rem;
-    height: 0rem;
-    cursor: pointer;
-    z-index: 3;
-    
+    background: none;
+    border: none;
+    cursor: pointer; 
+    z-index: 10000;
 }
 
-.go-top-container .go-top-button img {
+#scrollToTopButton img {
     width: 5.5rem;
 }
-
-.show {
-    z-index: 10;
-}
-
-.show .go-top-button {
-    width: 5rem;
-    height: 5rem;
-    z-index: 11;
-} */

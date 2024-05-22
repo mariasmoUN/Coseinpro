@@ -38,17 +38,23 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      photos = data.data;
-      const photosContainer = document.getElementById("photos");
-      photos.forEach((photo) => {
-        const photoElement = document.createElement("div");
-
-        photoElement.innerHTML = `
-                  <a href="${photo.permalink}" target="_blank">
-                      <img src="${photo.media_url}" alt="${photo.caption}" style="width:100%;"/>
-                  </a>
-              `;
-        photosContainer.appendChild(photoElement);
+      const items = data.data;
+      items.forEach((item) => {
+        if (item.media_type !== "VIDEO") {
+          photos.push(item);
+          const photosContainer = document.getElementById("photos");
+          const photoElement = document.createElement("div");
+          const imageUrl =
+            item.media_type === "CAROUSEL_ALBUM"
+              ? item.thumbnail_url || item.media_url
+              : item.media_url;
+          photoElement.innerHTML = `
+                      <a href="${item.permalink}" target="_blank">
+                          <img src="${imageUrl}" alt="${item.caption}" style="width:100%;"/>
+                      </a>
+                  `;
+          photosContainer.appendChild(photoElement);
+        }
       });
     })
     .catch((error) => {

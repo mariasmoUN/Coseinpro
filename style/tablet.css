@@ -40,6 +40,10 @@ video {
     margin-top: 8rem;
 }
 
+.carousel {
+    max-width: 62rem;
+}
+
 /* Seccion de servicios */
 
 .cards-container {
@@ -86,9 +90,19 @@ video {
     width: 530px;
 }
 
-/* Botones flotantes */
+/* Footer */
 
-.go-top-container,
-.go-top-button {
+.logo-co-container .logo-co {
     display: none;
+}
+
+.logo-co-container .logo-blanco {
+    display: inline;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.footer-map #map-mobile {
+    width: 50rem;
+    border-radius: 1rem;
 }

@@ -10,20 +10,18 @@ const hipotecasHover = document.querySelector(".hoverHipotecas");
 const asesorias = document.querySelector(".asesorias");
 const asesoriasHover = document.querySelector(".hoverAsesorias");
 const btn_Wapp = document.querySelector(".go-wpp-container");
-const btnTop = document.querySelector(".go-top-container");
+const sectionAll = document.querySelectorAll("section[id]");
 
 /* Menu */
 
 function showSidebar() {
-  sidebar.style.display = "flex";
+  sidebar.classList.toggle("sidebar-active");
   btn_Wapp.style.display = "none";
-  btnTop.style.display = "none";
 }
 
 function hideSidebar() {
-  sidebar.style.display = "none";
+  sidebar.classList.remove("sidebar-active");
   btn_Wapp.style.display = "flex";
-  /*   btnTop.style.display = "flex"; */
 }
 
 /* Feed de instagram */
@@ -82,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function updateCarousel() {
-    const offset = currentIndex * -100;
+    const offset = currentIndex * -106.66;
     carousel.style.transform = `translateX(${offset}%)`;
   }
 });
@@ -147,7 +145,9 @@ function scrollToTop() {
 
 window.onscroll = function () {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 100) {
+  sidebarIsActive = sidebar.classList.contains("sidebar-active");
+
+  if (scrolled > 100 && !sidebarIsActive) {
     document.getElementById("scrollToTopButton").style.display = "block";
   } else {
     document.getElementById("scrollToTopButton").style.display = "none";

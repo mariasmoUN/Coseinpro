@@ -9,7 +9,7 @@
 
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./style/tablet.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 1024px)">
 
     <!-- Iconos -->
@@ -58,7 +58,7 @@
             <!-- Barra de navegación desktop -->
             <div class="nav-content">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="./quienes_somos.html">Quiénes somos</a></li>
                 <li><a href="#servicios">Nuestros servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </div>
@@ -322,22 +322,33 @@
             <div class="info-contacto-container">
                 <h2>Información de contacto</h2>
 
-                <form id="form" class="form-contacto" name="contacto-coseinpro">
+                <form id="form" class="form-contacto" name="contacto-coseinpro" action="https://formsubmit.co/publicidad@coseinpro.com" method="POST">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <input id="nombre" type="text" name="name" placeholder="Nombre completo" required>
                     <input id="email" type="email" name="email" placeholder="Correo electrónico" required>
-                    <input id="nombre" type="text" name="name" placeholder="Nombre de contacto" required>
-                    <input id="asunto" type="text" name="affair" placeholder="Servicio en el que estoy interesado" required>
+                    <input id="telefono" type="tel" name="phone" placeholder="Teléfono" required>
+                    <textarea name="asunto" id="affair" cols="30" rows="4" placeholder="Mensaje"></textarea>
+
+                    <div class="form-privacidad">
+                        <a href="./assets/INMOBILIARIA COSEINPRO SAS - POLITICAS DE DATOS.pdf" target="_blank">Política de privacidad</a>
+                    </div>
     
                     <div class="form-button">
                         <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
                     </div>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="footer-container">
+    <footer class="footer-container footer-mobile">
         <div class="logo-co-container">
-            <img src="./images/logo-co.png" alt="Logo Coseinpro - Co">
+            <img class="logo-co" src="./images/logo-co.png" alt="Logo Coseinpro - Co">
+            <img class="logo-blanco" src="./images/Logo Coseinpro blanco.png" alt="Logo Coseinpro-Blanco">
         </div>
 
         <div class="footer-info-container">
@@ -364,7 +375,7 @@
 
         <div class="footer-map">
             <iframe id="map-mobile" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1140675096804!2d-75.59792522426542!3d6.248696893739735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a0707f6fc5%3A0xf3230016b1867e0a!2sCra.%2076%20%234232%2C%20Laureles%20-%20Estadio%2C%20Medell%C3%ADn%2C%20Laureles%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1716239051601!5m2!1ses!2sco" width="380" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1140675096804!2d-75.59792522426542!3d6.248696893739735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a0707f6fc5%3A0xf3230016b1867e0a!2sCra.%2076%20%234232%2C%20Laureles%20-%20Estadio%2C%20Medell%C3%ADn%2C%20Laureles%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1716239051601!5m2!1ses!2sco" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="links-importantes">
@@ -391,6 +402,60 @@
         </div>
     </footer>
 
+    <footer class="footer-container footer-desktop">
+        <div class="footer-partOne">
+            <div class="logo-direccion-container">
+                <img src="./images/Logo Coseinpro blanco.png" alt="Logo Coseinpro-Blanco">
+
+                <div class="info-direccion-container">
+                    <span><img src="./images/place-icon.png" alt="Ubicación"></span>
+                    <p>Cra 76 #42-32 Laureles, Medellín</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe id="map-mobile" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1140675096804!2d-75.59792522426542!3d6.248696893739735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a0707f6fc5%3A0xf3230016b1867e0a!2sCra.%2076%20%234232%2C%20Laureles%20-%20Estadio%2C%20Medell%C3%ADn%2C%20Laureles%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1716239051601!5m2!1ses!2sco" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer-info-container">
+                <div class="footer-text-container">
+                    <span><img src="./images/phone-icon.png" alt="Teléfono"></span>
+                    <p>(604) 444 62 67</p>
+                </div>
+    
+                <div class="footer-text-container">
+                    <span><img src="./images/mail-icon.png" alt="Correo"></span>
+                    <p>publicidad@coseinpro.com</p>
+                </div>
+    
+                <div class="footer-text-container">
+                    <span><img src="./images/hora-icon2.png" alt="Horario"></span>
+                    <p>Lunes a Viernes 8:30 AM - 5:30 PM<br>Sábados 8:30 AM - 12:30 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-partTwo">
+            <div class="text-partTwo-container">
+                <p>2024 <b>Coseinpro</b> todos los derechos reservados</p>
+            </div>
+            <div class="redes-footerTwo-container">
+                <a href="https://www.instagram.com/coseinpro/" target="_blank">
+                    <img src="./images/ig-icon.png" alt="Instagram">
+                </a>
+    
+                <a href="https://wa.me/573128789387" target="_blank"">
+                    <img src="./images/wp-icon.png" alt="WhatsApp">
+                </a>
+    
+                <a href="https://www.facebook.com/Coseinpro" target="_blank">
+                    <img src="./images/fb-icon.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <!-- Botes flotantes -->
 
     <div class="go-wpp-container">
@@ -401,7 +466,7 @@
         </div>
     </div>
 
-    <button id="scrollToTopButton" style="display: none;" onclick="scrollToTop()">
+    <button id="scrollToTopButton" class="btn-top" onclick="scrollToTop()">
         <img src="./images/up-button.png" alt="Up">
     </button>
 

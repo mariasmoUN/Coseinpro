@@ -1,3 +1,7 @@
+h2 {
+    font-size: 3rem;
+}
+
 /* Header */
 
 .header-container {
@@ -79,6 +83,7 @@ video {
 }
 
 /* Publicaciones feed instagram */
+
 .publicaciones-container {
     margin-top: 10rem;
 }
@@ -87,8 +92,8 @@ video {
     justify-content: center;
 }
 
-.publicaciones-container .feedInsta-container {
-    margin: 4rem 6rem 0 6rem;
+.carousel {
+    max-width: 126rem;
 }
 
 /* Seccion de servicios */
@@ -154,13 +159,123 @@ video {
     height: 5.5rem;
 }
 
+.redes-container .social-media {
+    max-width: 80rem;
+}
+
 /* Formulario de contacto */
 
 .contacto-container .info-contacto-container {
-    padding: 20rem  4rem;
+    padding: 18rem  4rem;
 }
 
 /* Footer */
+
+.footer-mobile {
+    display: none;
+}
+
+.footer-desktop {
+    display: flex;
+}
+
+.footer-container {
+    padding: 4rem;
+}
+
+.footer-partOne {
+    width: 100% ;
+    margin: 4rem 0;
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.logo-direccion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-direccion-container img {
+    width: 22rem;
+}
+
+.info-direccion-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    width: 23rem;
+}
+
+.info-direccion-container img {
+    width: 1.8rem;
+}
+
+.info-direccion-container p {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 62rem;
+} 
+
+.map-container iframe {
+    border-radius: 1rem;
+}
+
+.footer-info-container {
+    width: 24rem;
+    align-items: flex-start;
+}
+
+.footer-info-container .footer-text-container  {
+    width: auto;
+    width: 24rem;
+}
+
+.footer-info-container .footer-text-container span {
+    width: 1.8rem;
+}
+
+.footer-info-container .footer-text-container img{
+    width: 1.8rem;
+}
+
+.footer-info-container p {
+    font-size: 1.2rem;
+}
+
+.footer-partTwo {
+    border-top: 1px solid var(--white);
+    width: 100%;
+    padding: 4rem 4rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-partTwo-container p {
+    color: var(--white);
+}
+
+.redes-footerTwo-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes-footerTwo-container a {
+    width: 3rem;
+}
+
+.redes-footerTwo-container img {
+    width: 100%;
+}
 
 /* Botes flotantes */
 

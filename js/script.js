@@ -26,10 +26,8 @@ function hideSidebar() {
 
 /* Feed de instagram */
 
-document.addEventListener("DOMContentLoaded", function () {
-  const accessToken =
-    "IGQWRNdFNJbGVsUF9kd1BjNlJmbDJVUFBtU1Y5TTR0R2g3dHQxS0ZASVlhxTHhDYVlxQk1jRnY0WjZA4OHAtVHRMNHRpYlZAzQUNRY1BkbEt3U2FKSEotUXE1bnVfTmE5ZAEIyREdiTWFsdlA2X0pibHVUQWFfSVVieTAZD";
-  const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`;
+/* document.addEventListener("DOMContentLoaded", function () {
+
   let currentIndex = 0;
   let photos = [];
 
@@ -57,11 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => {
       console.error("Error fetching Instagram photos: ", error);
-    });
+    }); */
 
-  /* Botones del carrusel */
+/* Botones del carrusel */
 
-  const prevButton = document.getElementById("prev");
+/*  const prevButton = document.getElementById("prev");
   const nextButton = document.getElementById("next");
   const carousel = document.getElementById("photos");
 
@@ -83,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const offset = currentIndex * -106.66;
     carousel.style.transform = `translateX(${offset}%)`;
   }
-});
+}); */
 
 /* Hover de los servicios */
 

@@ -290,3 +290,31 @@ video {
 .go-wpp-container .go-wpp-button img {
     display: none;
 }
+
+/* Quienes somos */
+
+.quienesSomos-video-container {
+    display: none;
+}
+
+.info-title-container h2 {
+    font-size: 2.2rem;
+}
+
+.info-text-container p {
+    font-size: 1.8rem;
+}
+
+.cards-aboutUs-container {
+    flex-direction: row;
+}
+
+.cards-aboutUs-container h2 {
+    font-size: 2rem;
+}
+
+.card-one,
+.card-two {
+    width: 43rem;
+    height: 50.2rem;
+}

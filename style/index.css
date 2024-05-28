@@ -512,7 +512,7 @@ button {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(190, 190, 190, 0.76) 100%);
 }
 
-.redes-container .coseinpro-container {
+.coseinpro-container {
     margin: 0 3rem;
     background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(123,0,0,1) 90%);
     border-radius: 4rem;
@@ -521,7 +521,7 @@ button {
     align-items: center;
 }
 
-.redes-container .coseinpro-container p {
+.coseinpro-container p {
     color: var(--white);
     font-family: 'Hanson';
     font-size: 1.6rem;
@@ -529,7 +529,7 @@ button {
     margin-right: 1.5rem;
 }
 
-.contacto-container .links-redes-container {
+.links-redes-container {
     background-color: var(--white);
     border-radius: 0 3rem 3rem 0;
     display: flex;
@@ -538,12 +538,12 @@ button {
     padding: .5rem 1rem;
 }
 
-.contacto-container .links-redes-container a {
+.links-redes-container a {
     width: 4.5rem;
     height: 4.5rem;
 }
 
-.contacto-container .links-redes-container img {
+.links-redes-container img {
     width: 4.5rem;
     height: 4.5rem;
 }
